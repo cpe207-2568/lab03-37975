@@ -1,9 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg mb-5" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand prompt-black mr-50" href="index.html">TIMDRK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto gap-5">
+            <!-- Link Nav Bar -->
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="exp.html">Experience</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <!-- End Link Nav Bar -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav Bar -->
+
+    <!-- Content -->
+    <div class="d-flex flex-wrap justify-content-center align-items-center">
+      <!-- Image -->
+      <img
+        src="img/lhor.jpg"
+        alt=""
+        class="img-fluid shadow p-3 mb-3 rounded float-start"
+        style="width: 300px"
+      />
+      <!-- Text -->
+      <div class="ms-5" style="max-width: 600px">
+        <!-- Animated Heading -->
+        <h1 class="display-3 prompt-black typing-animation">
+          TEEJUTHA KONSOMBAT
+        </h1>
+
+        <!-- Description -->
+        <p class="fs-5 prompt-extralight" style="width: 747px">
+          I'm a student from Chiang Mai University, with a strong passion for
+          technology, innovation, and solving real-world problems through design
+          and development. I enjoy working on projects at the intersection of
+          web development, artificial intelligence, and user-centered design.
+        </p>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <div class="justify-content-center align-items-center my-5">
+      <h3 class="prompt-black">Skill</h3>
+      <hr style="width: 80%; border: none; border-top: 2px solid white; margin: 2rem auto;" />
+      <!-- Card 1 -->
+      <div class="d-flex justify-content-around mx-auto" style="width: 65%">
+        <div class="card card-custom text-white" style="width: 18rem">
+          <img
+            src="https://i.guim.co.uk/img/media/d059b58efe8ce50d15639f76448becdeec69bc9b/0_184_7200_4320/master/7200.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=cdb5298773baf69c080a77c757fd6c08"
+            class="card-img-top"
+            height="200px"
+            alt=""
+          />
+          <div class="card-body">
+            <h4 class="prompt-semibold">PROGRAMMING</h4>
+            <p class="card-text prompt-thin">
+              I'm a web developer skilled in React and Django, with experience
+              in AI tools like 3DDFA and face alignment. I enjoy solving
+              problems with code.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-custom text-white" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3k0jitO8udb0aX-gKHbaH0VTXAqphb2Pw_w&s"
+            class="card-img-top"
+            height="200px"
+            alt=""
+          />
+          <div class="card-body">
+            <h4 class="prompt-semibold">HEALTH TECH</h4>
+            <p class="card-text prompt-thin">
+              I'm passionate about medical technology, especially using AI and
+              web tools to support skin analysis, diagnosis, and patient care.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-custom text-white" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8gmufEAeNHVqA0AODvabAkL4n9XyNiP-jMQ&s"
+            class="card-img-top"
+            height="200px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h4 class="prompt-semibold">PUBLIC SPEAKING</h4>
+            <p class="card-text prompt-thin">
+              I'm confident in pitching ideas clearly, turning real problems
+              into solutions with strong storytelling and user-focused thinking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
